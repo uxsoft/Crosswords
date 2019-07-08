@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Crosswords.Services.Catalogs
@@ -11,10 +12,22 @@ namespace Crosswords.Services.Catalogs
         {
             Catalogs = catalogs;
         }
-        
-        public string GetLabel(string word)
+
+        public string? GetLabel(string word)
         {
-            Catalogs.FirstOrDefault()
+            return Catalogs
+                .Select(c => c.GetLabel(word))
+                .FirstOrDefault(s => s != null);
+        }
+
+        public IEnumerable<string> SuggestWords()
+        {
+            
+        }
+
+        public int GetWordLength(string startsWith)
+        {
+            
         }
     }
 }
