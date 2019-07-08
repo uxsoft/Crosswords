@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using System.Linq;
 
-namespace Crosswords.Services.Import
+namespace Crosswords.Services.Catalogs
 {
     public class KrSlovnikImporter
     {

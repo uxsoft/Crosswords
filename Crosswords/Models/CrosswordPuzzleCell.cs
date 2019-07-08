@@ -1,6 +1,6 @@
 namespace Crosswords.Models
 {
-    public class CrosswordPuzzleCell
+    public interface ICrosswordPuzzleCell
     {
         
     }
