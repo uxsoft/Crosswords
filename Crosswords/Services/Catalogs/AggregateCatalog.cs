@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,12 +23,13 @@ namespace Crosswords.Services.Catalogs
 
         public IEnumerable<string> SuggestWords()
         {
-            
+            throw new NotImplementedException();
         }
 
         public int GetWordLength(string startsWith)
         {
-            
+            return Catalogs
+                .Max()
         }
     }
 }

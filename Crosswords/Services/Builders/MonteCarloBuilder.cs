@@ -7,8 +7,11 @@ using Crosswords.Services.Tokenization;
 
 namespace Crosswords.Services.Builders
 {
-    public class MonteCarloBuilder
+    public static class MonteCarloBuilder
     {
+        //TODO use RegExes to search
+        //TODO save possible letters in down direction upfront to optimize search and eliminate guessing
+        
         public static CrosswordPuzzle Build(int width, int height, ICatalog catalog, int? seed = null,
             CancellationToken? cancel = null)
         {

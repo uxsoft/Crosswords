@@ -110,5 +110,15 @@ namespace Crosswords.Services.Catalogs
         {
             return $"Římsky '{RomanToArabic(word)}'";
         }
+
+        public IEnumerable<string> SuggestWords()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public int GetWordLength(string startsWith)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

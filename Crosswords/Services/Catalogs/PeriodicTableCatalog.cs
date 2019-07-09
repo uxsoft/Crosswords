@@ -131,5 +131,15 @@ namespace Crosswords.Services.Catalogs
         {
             return _elements.ContainsKey(word) ? $"Chemická značka pro {_elements[word]}" : null;
         }
+
+        public IEnumerable<string> SuggestWords()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public int GetWordLength(string startsWith)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
